@@ -1,12 +1,16 @@
 {
-  "name": "example",
+  "name": "app",
   "version": "0.0.1",
   "description": "An example Node application with Nunjucks templates",
   "scripts": {
-    "start": "node example.js"
+    "start": "node app.js"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.4",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "consolidate": "^0.15.1",
+    "nunjucks": "^3.2.0"
   },
   "engines": {
     "node": "8.x"
