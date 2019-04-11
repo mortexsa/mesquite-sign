@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .red{color:red;}
+      .yellow{color:yellow;}
+    </style>
+    <title>A static file</title>
+  </head>
+  <body>
+    <ul>
+      {% for a, b in info %}
+      <li>{{ a }} : {{ b }}</li>
+      {% endfor %}
+      {% if info['color'] == 'red' %}
+        {% for c in red %}
+          <li class="red">{{ c }}</li>
+        {% endfor %}
+      {% else %}
+        {% for c in yellow %}
+          <li class="yellow">{{ c }}</li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </body>
+</html>
